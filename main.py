@@ -119,6 +119,17 @@ class Blockchain:
 
         print("✅ Blockchain is valid.")
         return True
+    
+        # Clears the blockchain and recreates the genesis block
+    def wipe_chain(self):
+        confirm = input("⚠️ Are you sure you want to wipe the entire blockchain? (yes/no): ").strip().lower()
+        if confirm == "yes":
+            self.chain = []
+            self.create_genesis_block()
+            print("🧹 Blockchain wiped and reset to genesis block.")
+        else:
+            print("❎ Wipe cancelled.")
+
 
 # Text-based menu for interacting with the blockchain
 def main():
@@ -129,7 +140,10 @@ def main():
         print("1. Add block with data")
         print("2. View entire blockchain")
         print("3. Validate blockchain")
-        print("4. Exit")
+        print("4. Wipe blockchain (reset to genesis block)")
+        print("5. Exit")
+
+
         choice = input("Choose an option: ")
 
         if choice == "1":
@@ -139,9 +153,12 @@ def main():
             bc.view_chain()
         elif choice == "3":
             bc.validate_chain()
-        elif choice == "4":
+        elif choice == "5":
             print("👋 Exiting. Goodbye!")
             break
+        elif choice == "4":
+            bc.wipe_chain()
+
         else:
             print("❌ Invalid option. Please choose 1-4.")
 
