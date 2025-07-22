@@ -1,16 +1,9 @@
 [
     {
         "index": 0,
-        "timestamp": 1753179484.8002205,
+        "timestamp": 1753180641.7689466,
         "data": "Genesis Block",
         "previous_hash": "0",
-        "hash": "d22f61dfd038fc18483bda805c48923d197e63e0b0034fe7b9a5bf7a89130314"
-    },
-    {
-        "index": 1,
-        "timestamp": 1753179654.0762186,
-        "data": "My Name",
-        "previous_hash": "d22f61dfd038fc18483bda805c48923d197e63e0b0034fe7b9a5bf7a89130314",
-        "hash": "bfb31aec550feafde2dc2b4ad680a53e51d541c603ff0c25ad746343a45621ae"
+        "hash": "49cb03e23123dea7b64b41826ab7bfb3d5fb0772633a56f7e80a548a928088c8"
     }
 ]
