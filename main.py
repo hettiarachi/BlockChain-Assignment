@@ -160,7 +160,7 @@ def main():
             bc.wipe_chain()
 
         else:
-            print("❌ Invalid option. Please choose 1-4.")
+            print("❌ Invalid option. Please choose 1-5.")
 
 if __name__ == "__main__":
     main()
